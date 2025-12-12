@@ -1,3 +1,5 @@
+package conditional_loops_03;
+
 public class longestsubstring_03 {
     static void main(String[] args) {
         String sample="vishalbhal";
@@ -12,6 +14,7 @@ public class longestsubstring_03 {
 
         for (int right = 0; right < n; right++) {
             char c = s.charAt(right);
+
             left = Math.max(left, lastSeen[c]);
 
 
