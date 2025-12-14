@@ -38,7 +38,8 @@ public class Two_sum {
             int c=target-nums[i];
 
             if (map.containsKey(c)){
-                return new int[]{map.get(c),i};
+                return new int[]{map.get(c),i};   //time complexity is o(n)
+                                                // o(1)
             }
             map.put(nums[i],i );
 
