@@ -1,33 +1,29 @@
-// https://leetcode.com/problems/matrix-diagonal-sum/description/
+package Array_04;// https://leetcode.com/problems/matrix-diagonal-sum/description/
 // File: diagonalSum_1572.java
 
 /**
  * Problem: Matrix Diagonal Sum (LeetCode #1572)
  *
- * You are given a square matrix `mat` of size n x n.
- * The task is to calculate the sum of the values on its two diagonals:
- *  - Primary diagonal (from top-left to bottom-right)
- *  - Secondary diagonal (from top-right to bottom-left)
+ * Given a square matrix mat of size n x n,
+ * return the sum of the elements on the primary and secondary diagonals.
  *
- * Note: If n is odd, the center element is counted only once.
+ * If n is odd, the center element (which lies on both diagonals)
+ * must be counted only once.
  */
 
-public class Solution {
+public class diagonalSum_1572 {
 
-    /**
-     * Returns the sum of the two diagonals of the matrix.
-     * @param mat the input square matrix
-     * @return the diagonal sum
-     */
+
     public int diagonalSum(int[][] mat) {
-        int n = mat.length; // size of the square matrix
+        int n = mat.length;
         int sum = 0;
 
         for (int i = 0; i < n; i++) {
-            // Add primary diagonal element
+            // Primary diagonal: (i, i)
             sum += mat[i][i];
 
-            // Add secondary diagonal element if it's not the same as primary diagonal
+            // Secondary diagonal: (i, n - 1 - i)
+            // Avoid double-counting the center when n is odd
             if (i != n - 1 - i) {
                 sum += mat[i][n - 1 - i];
             }
@@ -36,33 +32,26 @@ public class Solution {
         return sum;
     }
 
-    /**
-     * Example test cases to help verify solution.
-     */
+    // Optional main method to run quick tests
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        diagonalSum_1572 sol = new diagonalSum_1572();
 
-        // Test Case 1
         int[][] mat1 = {
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}
         };
-        System.out.println("Output (Expected 25): " + sol.diagonalSum(mat1));
+        System.out.println("Expected 25, Got: " + sol.diagonalSum(mat1));
 
-        // Test Case 2
         int[][] mat2 = {
                 {1, 1, 1, 1},
                 {2, 2, 2, 2},
                 {3, 3, 3, 3},
                 {4, 4, 4, 4}
         };
-        System.out.println("Output (Expected 16): " + sol.diagonalSum(mat2));
+        System.out.println("Expected 16, Got: " + sol.diagonalSum(mat2));
 
-        // Test Case 3
-        int[][] mat3 = {
-                {5}
-        };
-        System.out.println("Output (Expected 5): " + sol.diagonalSum(mat3));
+        int[][] mat3 = {{5}};
+        System.out.println("Expected 5, Got: " + sol.diagonalSum(mat3));
     }
 }
