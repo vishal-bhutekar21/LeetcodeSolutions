@@ -49,7 +49,7 @@ public class InorderTraversal94 {
     private void inorder(TreeNode node, List<Integer> result) {
         if (node == null) return;
 
-        inorder(node.left, result);     // Left
+        inorder(node.left, result);
         result.add(node.val);           // Node
         inorder(node.right, result);    // Right
     }
