@@ -1,4 +1,4 @@
-package CodeForces;
+package CodeForces.A_Level_Easy;
 
 import java.util.Scanner;
 
