@@ -21,10 +21,12 @@ public class IWannaBetheGuy469A {
             levels.add(sc.nextInt());
         }
 
+
         if (levels.size() == n) {
             System.out.println("I become the guy.");
         } else {
             System.out.println("Oh, my keyboard!");
         }
     }
+
 }
