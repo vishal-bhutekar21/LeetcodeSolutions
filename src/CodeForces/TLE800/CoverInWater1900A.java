@@ -48,3 +48,41 @@ public class CoverInWater1900A {
 
     }
 }
+//
+//import java.util.Scanner;
+//
+//public class CoverInWater1900A {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        int t = sc.nextInt();
+//
+//        while (t-- > 0) {
+//            sc.nextInt(); // n
+//
+//            String s = sc.next();
+//
+//            if (s.contains("...")) {
+//                System.out.println(2);
+//            } else {
+//                int cnt = 0;
+//
+//                for (char ch : s.toCharArray()) {
+//                    if (ch == '.') cnt++;
+//                }
+//
+//                System.out.println(cnt);
+//            }
+//        }
+//    }
+//}
+//
+//int totalemptycells = 0;
+//
+//for (char ch : s.toCharArray()) {
+//        if (ch == '.') {
+//totalemptycells++;
+//        }
+//        }
+//
+//        System.out.println(s.contains("...") ? 2 : totalemptycells);
