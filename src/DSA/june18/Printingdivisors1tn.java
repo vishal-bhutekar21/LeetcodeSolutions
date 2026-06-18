@@ -1,4 +1,4 @@
-package DSA;
+package DSA.june18;
 
 import java.util.ArrayList;
 import java.util.Scanner;
