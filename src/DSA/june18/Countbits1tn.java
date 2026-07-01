@@ -1,3 +1,4 @@
+// program to find the no of 1 bits in the number from 1 to n
 package DSA.june18;
 
 import java.util.Scanner;
