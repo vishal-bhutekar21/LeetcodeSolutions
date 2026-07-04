@@ -1,3 +1,4 @@
+//count of substring whose all three elements are present
 package DSA.july4;
 
 import java.util.Scanner;
