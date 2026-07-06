@@ -1,4 +1,4 @@
-package DSA.july05;
+package DSA.july5;
 
 import java.util.*;
 
