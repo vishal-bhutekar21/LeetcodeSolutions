@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class MaxNoofVowels {
 
     static boolean isVowel(char c) {
-        if (c == 'a' || c == 'e' || c == 'i' || c == 'u' || c == 'o') {
-            return true;
-
-        }
-        return false;
+        return c == 'a' || c == 'e' || c == 'i' || c == 'u' || c == 'o';
     }
 
     static int maxVowels(String s, int k) {
@@ -48,3 +44,4 @@ public class MaxNoofVowels {
 
     }
 }
+//https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/

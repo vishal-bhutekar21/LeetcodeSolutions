@@ -59,3 +59,4 @@ public class PermutationInString {
         System.out.println("contains or not " + checkInclusion(s1, s2));
     }
 }
+//https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/
