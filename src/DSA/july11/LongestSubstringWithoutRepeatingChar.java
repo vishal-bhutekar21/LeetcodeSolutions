@@ -1,4 +1,4 @@
-package DSA;
+package DSA.july11;
 
 import java.util.HashSet;
 import java.util.Scanner;

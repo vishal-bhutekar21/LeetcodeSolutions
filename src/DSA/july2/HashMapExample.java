@@ -1,9 +1,9 @@
 package DSA.july2;
 
-import java.util.Map;
 import java.util.HashMap;
-import java.util.TreeMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class HashMapExample {
     public static void main(String[] args) {
@@ -40,6 +40,7 @@ public class HashMapExample {
         System.out.println();
 
     }
+
     // SMOOTH METHOD: This method accepts ANY object that implements the Map interface.
     // It doesn't care if it's a HashMap, TreeMap, or LinkedHashMap.
     public static void printDataSmooth(Map<Integer, String> anyMap) {
