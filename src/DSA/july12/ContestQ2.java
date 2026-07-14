@@ -19,7 +19,7 @@ public class ContestQ2 {
     static int minimumCost(int[] nums, int k) {
 
         int n = nums.length;
-        
 
+        return 0;
     }
 }
