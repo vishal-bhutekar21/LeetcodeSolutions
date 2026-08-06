@@ -9,12 +9,13 @@ public class IQtest25A {
         int n=sc.nextInt();
         int evencount=0;
         int oddcount=0;
-        int eveni=-1;
         int oddi=-1;
+        int eveni=-1;
         int []arr=new int[n+1];
         for (int i = 1; i <= n; i++) {
 
             arr[i]=sc.nextInt();
+
 
 
 
